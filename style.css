@@ -1,0 +1,129 @@
+:root {
+    --body-bg-color: #dce4e3;
+    --green: #18c29c;
+    --light-green: #8ed7c6;
+    --light-grey: #dce4e3;
+    --text-color: #084236;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--body-bg-color);
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+}
+
+/*CSS SIDEBAR*/
+
+.sidebar {
+    background-color: var(--green);
+    width: 5vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    transition: width .2s;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+}
+
+ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+}
+
+ul li div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    transition: background-color .2s;
+    border-radius: 10px;
+}
+
+ul li div:hover {
+    background-color: var(--light-green);
+}
+
+a {
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+/* .log-out {
+    background-color: var(--light-green);
+    width: 100%;
+    text-align: center;
+} */
+
+.onclick-sidebar {
+    transition: all .2s;
+    width: 25vw;
+
+}
+
+.onclick-sidebar nav {
+    width: 80%;
+}
+
+button {
+    border: transparent;
+    background-color: var(--green);
+    padding: 10px;
+    cursor: pointer;
+}
+
+.menu-div {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.log-out {
+    background-color: var(--light-green);
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+}
+
+.onclick-sidebar .log-out {
+
+    background-color: var(--light-green);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.text-logout {
+    transition: all .2s;
+    display: flex;
+    gap: 10px;
+    color: var(--text-color);
+    line-height: 20px;
+    align-items: center;
+}
+
+.log-out .perfil {
+    width: 50px;
+}
+
+h1 {
+    color: var(--text-color);
+    font-weight: 500;
+    padding: 10px 20px;
+}
+
